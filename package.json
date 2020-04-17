@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "dotenv-up": "^1.0.28",
+    "express": "^4.16.4",
+    "inspc": "0.0.16",
+    "nlab": "0.0.49",
+    "normalize.css": "^8.0.1"
+  }
+}

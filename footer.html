@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <style>
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+#content-wrap {
+    background-color: lightgreen;
+}
+#footer {
+    background-color: pink;
+}
+    </style>
+   
+</head>
+<body>
+
+ <div id="page-container">
+   <div id="content-wrap">
+     <button class="add">add</button>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id mi lacus. Vivamus ultrices orci vitae dolor pretium volutpat. Vestibulum vitae diam iaculis, aliquam risus ac, aliquet augue. Integer pulvinar magna pharetra nisi accumsan, in tempor lacus facilisis. Aenean et risus quis purus porttitor volutpat. In nec turpis non dolor ultricies tempus. Donec id augue eu erat volutpat maximus quis ac urna. Phasellus dictum urna ut velit finibus, sit amet aliquet libero rutrum. Pellentesque pulvinar metus a nisi ultrices convallis. Nullam elit augue, condimentum at turpis ut, venenatis dictum quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc laoreet, mauris quis volutpat tristique, enim lorem eleifend justo, sit amet ultrices neque erat eu neque. Cras luctus mauris in nisl tristique tincidunt.</p>
+     
+   </div>
+   <footer id="footer">footer</footer>
+ </div>
+    <script>
+const manipulation = {
+    after: function (referenceNode, newNode) {
+        return this.before(referenceNode.nextSibling, newNode);
+    },
+    before: function (referenceNode, newNode) {
+        referenceNode.parentNode.insertBefore(newNode, referenceNode);
+        return this;
+    },
+    append: function (parentNode, newNode) {
+        parentNode.appendChild(newNode);
+        return this;
+    },
+    prepend: function (parentNode, newNode) {
+        parentNode.insertBefore(newNode, parentNode.firstChild);
+        return this;
+    },
+    remove: function (node) {
+        node.parentNode.removeChild(node);
+        return this;
+    },
+    empty: function (node) {
+        while(node.firstChild){
+            node.removeChild(node.firstChild);
+        }
+        return this;
+    }
+};
+
+        const add = document.querySelector('.add'); // vanilla javascript
+        const p = document.querySelector('p');
+        add.addEventListener('click', function () {
+
+            manipulation.after(p, p.cloneNode(true))
+        })
+            
+    </script>
+</body>
+</html>
