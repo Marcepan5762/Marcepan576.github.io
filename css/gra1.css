@@ -640,3 +640,14 @@ opacity: 0.8;
    background-color: #009999;
    
 }
+#bloczek {
+    background-color: #009999
+}
+.obiektOdp {
+    display: none;
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+   background-color: #009999;
+   margin-left: 200px;
+}
