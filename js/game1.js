@@ -188,9 +188,7 @@ function placeDiv1(rand_x, rand_y) {
 
 function startGame() {
 
-    if(Draggable.hitTest("#obiekt", ".odpBlockP")) {
-      alert("wddw");
-    };
+    
 
     document.getElementById("bloczekStartu").style.display = "none";
 
