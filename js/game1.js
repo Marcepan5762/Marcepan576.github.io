@@ -1,7 +1,7 @@
 let obiekt = document.querySelector('#obiekt');
 let moveBy = 35;
 let obiektOdp = document.querySelector('.obiektOdp');
-var sec = 0, time = 50;
+var sec = 0, time = 100;
 var x_pos = 500, y_pos = 250;
 var rand_x, rand_y;
 var traf = 0, blad = 0;
@@ -188,6 +188,10 @@ function placeDiv1(rand_x, rand_y) {
 
 function startGame() {
 
+    if(Draggable.hitTest("#obiekt", ".odpBlockP")) {
+      alert("wddw");
+    };
+
     document.getElementById("bloczekStartu").style.display = "none";
 
     var timer=setInterval(function(){
@@ -202,8 +206,8 @@ function startGame() {
 var gra=setInterval(function(){
     var i;
     
-    rand_x = Math.floor(Math.random() * 1200) + 1;
-    rand_y = Math.floor(Math.random() * 500) + 1;
+    rand_x = Math.random() * (1400 - 230) + 1;
+    rand_y = Math.random() * (700 - 300) + 1;
     
     i = Math.floor(Math.random() * 20) + 1;
     window['placeDiv' + i](rand_x, rand_y);
@@ -232,7 +236,7 @@ function instrukcja() {
     document.getElementById("powrotB").setAttribute("id", "powrot");
 
 };
-document.getElementById("powrot").style.display = "none";
+document.getElementById("powrot").setAttribute("id", "powrotB");
 function powrot() {
 
     document.getElementById("startB").setAttribute("id", "start");
