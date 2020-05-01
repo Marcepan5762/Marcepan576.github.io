@@ -4,6 +4,7 @@ let obiektOdp = document.querySelector('.obiektOdp');
 var sec = 0, time = 50;
 var x_pos = 500, y_pos = 250;
 var rand_x, rand_y;
+var traf = 0, blad = 0;
 
 var cord = document.getElementsByClassName('.obiekt');
 obiekt.style. position = "absolute"
@@ -43,7 +44,6 @@ cord.style.position = "absolute"
 cord.style.left = x_pos+'px';
 cord.style.top = y_pos+'px';
 
-var touching = Element.getBoundingClientRect(); 
 
 function placeDiv1(rand_x, rand_y) {
     let d = document.getElementById("ODP1");
@@ -195,22 +195,32 @@ function startGame() {
         time=time-1;
     if(time == 0) {
             document.getElementById("timer").style.display = "none";
+            document.getElementById("przegrana").setAttribute("id", "trueFail");
     }
 }   ,1000);
     
 var gra=setInterval(function(){
     var i;
     
-    rand_x = Math.floor(Math.random() * 1100) + 1;
-    rand_y = Math.floor(Math.random() * 550) + 1;
+    rand_x = Math.floor(Math.random() * 1200) + 1;
+    rand_y = Math.floor(Math.random() * 500) + 1;
     
     i = Math.floor(Math.random() * 20) + 1;
     window['placeDiv' + i](rand_x, rand_y);
-    console.log(rand_x);
-    console.log(rand_y);
-    console.log(i);
     gra+1;
 },1000);
+
+var wynika = traf;
+document.getElementById("wynika").innerHTML = wynika;
+
+if(traf == 10) {
+
+    document.getElementById("wygrana").setAttribute("id", "trueWin");
+    document.getElementById("przegrana").setAttribute("id", "trueFail");
+};
+if(blad == 5) {
+    document.getElementById("przegrana").setAttribute("id", "trueFail"); 
+};
  
 };
 function instrukcja() {
@@ -222,7 +232,7 @@ function instrukcja() {
     document.getElementById("powrotB").setAttribute("id", "powrot");
 
 };
-document.getElementById("powrot").setAttribute("id", "powrotB");
+document.getElementById("powrot").style.display = "none";
 function powrot() {
 
     document.getElementById("startB").setAttribute("id", "start");
@@ -230,6 +240,11 @@ function powrot() {
     document.getElementById("bloczekInstrukcja").setAttribute("id", "bloczekStartu");
     document.getElementById("instrukcjaB").setAttribute("id", "instrukcja");
     document.getElementById("powrot").setAttribute("id", "powrotB");
+
+};
+function gameover() {
+
+location.reload()
 
 };
 

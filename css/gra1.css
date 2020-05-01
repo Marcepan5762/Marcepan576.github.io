@@ -756,5 +756,58 @@ border: solid black  2px;
     background-color: gainsboro;
     width: 150px;
     height: 75px;
+    margin: 50px;
 
+}
+#wygrana {
+    display: none;
+    
+}
+#trueWin {
+    z-index: 900;
+    background-color: darkmagenta;
+    width : 500px;
+    border-radius: 5px;
+    box-shadow: black 5px;
+    border: 5px solid floralwhite;
+    height: 170px;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    position: absolute;
+    left: 40%;
+
+}
+#trueFail {
+    z-index: 111;
+    background-color: darkmagenta;
+    width : 500px;
+    border-radius: 5px;
+    box-shadow: black 5px;
+    border: 5px solid floralwhite;
+    height: 170px;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    left: 40%;
+    position: absolute;
+}
+#przegrana {
+    display: none;
+}
+.zagrajPonownie {
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: lightblue;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-size: bold;
+    border: solid black  2px; 
+    z-index: 100;
 }
