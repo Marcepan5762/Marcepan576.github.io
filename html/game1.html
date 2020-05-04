@@ -63,18 +63,18 @@
                     <button type="menu" id="instrukcja" onclick="instrukcja()">INSTRUKCJA</button>
                 </div>
                 <div id="obiekt"></div>
-                <div class="odpBlock" id ="ODP1">ddd</div>   <div class="odpBlock" id ="ZLE1">zzz</div>
-                <div class="odpBlock" id ="ODP2">ddd</div>   <div class="odpBlock" id ="ZLE2">zzz</div>
-                <div class="odpBlock" id ="ODP3">ddd</div>   <div class="odpBlock" id ="ZLE3">zzz</div>
-                <div class="odpBlock" id ="ODP4">ddd</div>   <div class="odpBlock" id ="ZLE4">zzz</div>
-                <div class="odpBlock" id ="ODP5">ddd</div>   <div class="odpBlock" id ="ZLE5">zzz</div>
-                <div class="odpBlock" id ="ODP6">ddd</div>   <div class="odpBlock" id ="ZLE6">zzz</div>
-                <div class="odpBlock" id ="ODP7">ddd</div>   <div class="odpBlock" id ="ZLE7">zzz</div>
-                <div class="odpBlock" id ="ODP8">ddd</div>   <div class="odpBlock" id ="ZLE8">zzz</div>
-                <div class="odpBlock" id ="ODP9">ddd</div>   <div class="odpBlock" id ="ZLE9">zzz</div>
-                <div class="odpBlock" id ="ODP10">ddd</div>  <div class="odpBlock" id ="ZLE10">zzz</div>
-                <div id="wygrana">Wygrana <hr/> Idealnie znasz Mikołaja Kopernika<hr/>
-                 <button type="menu" onclick="gameover()" class="Zagraj ponownie">ZAGRAJ PONOWNIE</div>
+                <button class="odpBlock" type="button"  onclick="punkt()" id ="ODP1">ddd</button>   <div class="odpBlock" id ="ZLE1">zzz</div>
+                <button class="odpBlock"  type="button" onclick="punkt()" id ="ODP2">ddd</button>   <div class="odpBlock" id ="ZLE2">zzz</div>
+                <button class="odpBlock"  type="button" onclick="punkt()" id ="ODP3">ddd</button>   <div class="odpBlock" id ="ZLE3">zzz</div>
+                <button class="odpBlock"  type="button" onclick="punkt()" id ="ODP4">ddd</button>   <div class="odpBlock" id ="ZLE4">zzz</div>
+                <button class="odpBlock"  type="button" onclick="punkt()" id ="ODP5">ddd</button>   <div class="odpBlock" id ="ZLE5">zzz</div>
+                <button class="odpBlock"  type="button" onclick="punkt()" id ="ODP6">ddd</button>   <div class="odpBlock" id ="ZLE6">zzz</div>
+                <button class="odpBlock"  type="button" onclick="punkt()" id ="ODP7">ddd</button>   <div class="odpBlock" id ="ZLE7">zzz</div>
+                <button class="odpBlock"  type="button" onclick="punkt()" id ="ODP8">ddd</button>   <div class="odpBlock" id ="ZLE8">zzz</div>
+                <button class="odpBlock"  type="button" onclick="punkt()" id ="ODP9">ddd</button>   <div class="odpBlock" id ="ZLE9">zzz</div>
+                <button class="odpBlock"  type="button" onclick="punkt()" id ="ODP10">ddd</button>  <div class="odpBlock" id ="ZLE10">zzz</div>
+                <button id="wygrana">Wygrana <hr/> Idealnie znasz Mikołaja Kopernika<hr/>
+                 <button type="menu" onclick="gameover()" class="zagrajPonownie">ZAGRAJ PONOWNIE</div>
                 </div>
                 <div id="przegrana"> Przegrana <hr/>
                     TWÓJ WYNIK TO<div id="wynika"></div><hr/>
@@ -90,7 +90,7 @@
     </section>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="../js/vendor/draggable.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

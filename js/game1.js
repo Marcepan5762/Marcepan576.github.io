@@ -5,6 +5,8 @@ var sec = 0, time = 100;
 var x_pos = 500, y_pos = 250;
 var rand_x, rand_y;
 var traf = 0, blad = 0;
+var reakcja = document.getElementsByClassName("odpBlock");
+
 
 var cord = document.getElementsByClassName('.obiekt');
 obiekt.style. position = "absolute"
@@ -38,6 +40,7 @@ window.addEventListener('keyup', (e) =>{
 
    }
 });
+
 
 var cord = document.getElementById('bloczekStartu');
 cord.style.position = "absolute"
@@ -187,9 +190,8 @@ function placeDiv1(rand_x, rand_y) {
   };
 
 function startGame() {
-
-    
-
+     
+  
     document.getElementById("bloczekStartu").style.display = "none";
 
     var timer=setInterval(function(){
@@ -212,16 +214,23 @@ var gra=setInterval(function(){
     gra+1;
 },1000);
 
+ function punkt() {
+  
+  trf++;
+
+ };
+
 var wynika = traf;
 document.getElementById("wynika").innerHTML = wynika;
 
 if(traf == 10) {
 
     document.getElementById("wygrana").setAttribute("id", "trueWin");
-    document.getElementById("przegrana").setAttribute("id", "trueFail");
+    document.getElementById("zagrajPonownie").setAttribute("id", "zagrajPonownieP");
 };
 if(blad == 5) {
     document.getElementById("przegrana").setAttribute("id", "trueFail"); 
+    document.getElementById("zagrajPonownie").setAttribute("id", "zagrajPonownieP");
 };
  
 };

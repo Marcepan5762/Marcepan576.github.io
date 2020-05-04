@@ -546,9 +546,6 @@ color: #ffffff;
 	color:  #d279d2;
 	font-family: Geneva, Arial, Helvetica, sans-serif;	
 }
-#srodokowaCzescKontenera {
-    position:  ;
-}
 #tematM
 {
 	min-height: 244px;
@@ -638,7 +635,6 @@ opacity: 0.8;
     height: 70px;
     border-radius: 50%;
    background-color: #009999;
-   z-index: 50;
 }
 #bloczek {
     background-color: #009999
@@ -763,6 +759,17 @@ border: solid black  2px;
     text-align: center;
 
 }
+.odpBlock1 {
+    background-color: gainsboro;
+    width: 150px;
+    height: 75px;
+    margin: 50px;
+    border: midnightblue solid 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
 #wygrana {
     display: none;
     
@@ -814,4 +821,32 @@ border: solid black  2px;
     font-size: bold;
     border: solid black  2px; 
     z-index: 100;
+    display: none;
+}
+.zagrajPonownieP {
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: lightblue;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-size: bold;
+    border: solid black  2px; 
+    z-index: 100;
+    display: none;
+}
+.znika {
+    display: none;
+}
+.odpBlock1P
+{
+    background-color: gainsboro;
+    width: 150px;
+    height: 75px;
+    margin: 50px;
+    border: midnightblue solid 5px;
+    border-radius: 5px;
+    text-align: center;
+
 }
