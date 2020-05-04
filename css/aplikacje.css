@@ -595,7 +595,7 @@ color: #ffffff;
 #dolnaCzescStrony 
 {
     background-color: #060d13;
-    margin-top: 2%;
+    margin-top: 5%;
     clear: both;
     position: relative;
     
@@ -626,32 +626,13 @@ color: #ffffff;
 .proponowane {
 
 max-width: 75%;
-margin-top: 20px;
+margin-top: 30px;
 }
 .proponowane:hover {
 opacity: 0.8;
 
 }
 .proponowane {
-
-}
-#link2 {
-
-  display: none;
-
-}
-#link2Show {
-    display: true
-}
-#przewin {
-
-    font-weight: bold;
-    color: whitesmoke;
-    opacity: 0.8;
-    font-size: 100px;
-
-}
-#link1hide {
-    display: none;
+    margin-bottom: 50px;
 }
 

@@ -633,25 +633,25 @@ opacity: 0.8;
 
 }
 .proponowane {
+    margin-bottom: 20px;
+}
+#informacje {
+
+background-image: url("../images/quiz.png");
+background-color: mintcream;
+border-radius: 5px;
+width: 100%;
+height: 100px;
 
 }
-#link2 {
+.kontakter {
 
-  display: none;
-
-}
-#link2Show {
-    display: true
-}
-#przewin {
-
-    font-weight: bold;
-    color: whitesmoke;
-    opacity: 0.8;
-    font-size: 100px;
+ font-weight: bold;
+ font-size: 20px;
+ color: white;
+ text-align: justify;
+ margin-left: 30px;
+ margin-top: 20px;
+ background-color: black;
 
 }
-#link1hide {
-    display: none;
-}
-
