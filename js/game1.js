@@ -21,26 +21,6 @@ window.addEventListener('load', () =>{
     obiekt.style.top = 400;
 });
 
-window.addEventListener('keyup', (e) =>{ 
-   switch (e.key) {
-        case 'ArrowLeft':
-            obiekt.style.left = parseInt(obiekt.style.left) - moveBy + 'px';
-            break;
-        case 'ArrowRight':
-            obiekt.style.left = parseInt(obiekt.style.left) + moveBy + 'px';
-             break; 
-        case 'ArrowUp':
-            obiekt.style.top = parseInt(obiekt.style.top) - moveBy + 'px';
-             break;
-        case 'ArrowDown':
-            obiekt.style.top = parseInt(obiekt.style.top) + moveBy + 'px';
-             break;       
-
-            
-
-   }
-});
-
 
 var cord = document.getElementById('bloczekStartu');
 cord.style.position = "absolute"
@@ -188,16 +168,36 @@ function placeDiv1(rand_x, rand_y) {
     d.style.top = rand_y+'px';
     document.getElementById("ZLE10").setAttribute("class", "odpBlockP");
   };
+  function punkt() {
+
+    traf++;
+    if(traf == 10) {
+
+      document.getElementById("wygrana").setAttribute("id", "trueWin");
+      document.getElementById("zagrajPonownie").setAttribute("id", "zagrajPonownieP");
+  };
+
+  };
+  function timeCrusher() {
+
+    time=time-5;
+    blad++;
+    if(blad == 5) {
+      document.getElementById("przegrana").setAttribute("id", "trueFail"); 
+  };
+
+  };
+  
+
 
 function startGame() {
      
-  
     document.getElementById("bloczekStartu").style.display = "none";
 
     var timer=setInterval(function(){
         document.getElementById("timer").innerHTML = time + " POZOSTAŁY CZAS";
         time=time-1;
-    if(time == 0) {
+    if(time < 0) {
             document.getElementById("timer").style.display = "none";
             document.getElementById("przegrana").setAttribute("id", "trueFail");
     }
@@ -206,33 +206,19 @@ function startGame() {
 var gra=setInterval(function(){
     var i;
     
-    rand_x = Math.random() * (1400 - 230) + 1;
-    rand_y = Math.random() * (700 - 300) + 1;
+    rand_x = Math.floor(Math.random() * 200) + 1;
+    rand_y = Math.random() * (500 - 300) + 1;
     
     i = Math.floor(Math.random() * 20) + 1;
     window['placeDiv' + i](rand_x, rand_y);
     gra+1;
 },1000);
 
- function punkt() {
-  
-  trf++;
-
- };
 
 var wynika = traf;
 document.getElementById("wynika").innerHTML = wynika;
 
-if(traf == 10) {
 
-    document.getElementById("wygrana").setAttribute("id", "trueWin");
-    document.getElementById("zagrajPonownie").setAttribute("id", "zagrajPonownieP");
-};
-if(blad == 5) {
-    document.getElementById("przegrana").setAttribute("id", "trueFail"); 
-    document.getElementById("zagrajPonownie").setAttribute("id", "zagrajPonownieP");
-};
- 
 };
 function instrukcja() {
  

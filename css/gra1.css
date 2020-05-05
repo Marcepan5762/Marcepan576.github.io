@@ -635,6 +635,7 @@ opacity: 0.8;
     height: 70px;
     border-radius: 50%;
    background-color: #009999;
+   display: none;
 }
 #bloczek {
     background-color: #009999
