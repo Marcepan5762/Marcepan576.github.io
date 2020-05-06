@@ -645,3 +645,14 @@ border-radius: 10px;
 #quizowo1, #quizowo2, #quizowo3, #quizowo4, #quizowo5, #quizowo6, #quizowo7, #quizowo8, #quizowo9, #quizowo10, #quizowo11, #quizowo12, #wymik{
     display:none;
 }
+#bloczekWynik {
+
+display: none;
+background-color: #1b2833;
+width: 50%;
+position: absolute;
+border-radius: 5px;
+border: 7px solid blanchedalmond;
+left: 40%;
+
+}

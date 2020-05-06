@@ -1,11 +1,6 @@
 var sumadobrych = 0;
 var sumaZlych = 0;
-function dobrzeKolor() {
 
-   $('#srodokowaCzescKontenera').css('background-color','green');
-   setTimeout(10000);
-   $('#srodokowaCzescKontenera').css('background-color','white');
-};
 function zleKolor() {
 
    $('#srodokowaCzescKontenera').css('background-color','red');
@@ -95,11 +90,10 @@ $('#correct11').click(function()
 $('#correct12').click(function()
 {
     sumadobrych++;
-   $('#wynik').show();
+   $('#bloczekWynik').show();
    dobrzeKolor();
 });
 $('.czerwono').click(function()
 {
-    
    zleKolor();
 });
