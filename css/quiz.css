@@ -644,7 +644,17 @@ border-radius: 10px;
 }
 #quizowo1, #quizowo2, #quizowo3, #quizowo4, #quizowo5, #quizowo6, #quizowo7, #quizowo8, #quizowo9, #quizowo10, #quizowo11, #quizowo12, #wymik{
     display:none;
+   
 }
+#correct1, #correct2, #correct3, #correct4, #correct5, #correct6, #correct7, #correct8, #correct9, #correct10, #correct11, #correct12, #start, .czerwono  {
+
+     background-color: ivory;
+    border-radius: 5px;
+    border: solid black 3px;
+
+}
+
+
 #bloczekWynik {
 
 display: none;
@@ -653,6 +663,8 @@ width: 50%;
 position: absolute;
 border-radius: 5px;
 border: 7px solid blanchedalmond;
-left: 40%;
+left: 30%;
+font-weight: bold;
+text-align: center;
 
 }

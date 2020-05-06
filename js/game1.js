@@ -184,6 +184,7 @@ function placeDiv1(rand_x, rand_y) {
     blad++;
     if(blad == 5) {
       document.getElementById("przegrana").setAttribute("id", "trueFail"); 
+      document.getElementById("").setAttribute("id", "trueFail"); 
   };
 
   };
@@ -206,8 +207,8 @@ function startGame() {
 var gra=setInterval(function(){
     var i;
     
-    rand_x = Math.floor(Math.random() * 200) + 1;
-    rand_y = Math.random() * (500 - 300) + 1;
+    rand_x = Math.floor(Math.random() * 700) + 1;
+    rand_y = Math.random() * (600 - 300) + 1;
     
     i = Math.floor(Math.random() * 20) + 1;
     window['placeDiv' + i](rand_x, rand_y);
