@@ -638,21 +638,40 @@ opacity: 0.8;
 #miejsceNaText {
 
  background-color: lavender;
- border:black solid 5px;
+ background-image: url("../images/quiz.png");
  text-align: center;
  border-radius: 10px;
+ padding-bottom: 50px;
 
 }
-#textMiko {
-
-  background-color: black;
+.text {
+  
   font-size: 20px;
   text-align: justify;
-  color: white;
   margin: 30px;
 
 }
 h2 {
     text-align: left;
+}
+#textMiko {
+    background-color: blue;
+    color: white;
+    
+}
+#cd {
+    background-color: black;
+    color: white;
+}
+#jowisz {
+    background-color: orangered;
+    color: white;
+}
+#teoHelo {
+    background-color: green;
+    color: white;
+}
+#gwiazdy {
+    background-color: lightblue;
 }
 
