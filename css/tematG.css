@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html {
+html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -546,6 +546,9 @@ color: #ffffff;
 	color:  #d279d2;
 	font-family: Geneva, Arial, Helvetica, sans-serif;	
 }
+#srodokowaCzescKontenera {
+    position:  ;
+}
 #tematM
 {
 	min-height: 244px;
@@ -594,7 +597,7 @@ color: #ffffff;
     background-color: #060d13;
     margin-top: 5%;
     clear: both;
-
+    position: relative;
     
 }
 
@@ -607,6 +610,11 @@ color: #ffffff;
 	height: 30px;
 	background-color:#060D13;
     clear: both;
+    bottom:50px;
+   
+    
+	
+	 
 }
 #newsletter {
     background-image: url("../images/tło_nwesletter.jpg");
@@ -624,235 +632,27 @@ margin-top: 30px;
 opacity: 0.8;
 
 }
-#graLapanie {
+.proponowane {
+    margin-bottom: 50px;
+}
+#miejsceNaText {
 
-    background-image: url("../images/gra1.png");
-    width: 100%;
-    height: 530px;
-}
-#obiekt {
-    width: 100px;
-    height: 70px;
-    border-radius: 50%;
-   background-color: #009999;
-   display: none;
-}
-#bloczek {
-    background-color: #009999
-}
-.obiektOdp {
-    display: none;
-    width: 100px;
-    height: 70px;
-    border-radius: 50%;
-   background-color: #009999;
-   margin-left: 200px;
-}
-#timer {
-border-radius: 5px;
-background-color: tomato;
-width: 200px;
-height: 30px;
-text-align: center;
-font-size: bold;
-border: solid black  2px;
-
+ background-color: lavender;
+ border:black solid 5px;
+ text-align: center;
+ border-radius: 10px;
 
 }
-#start {
-    width: 400px;
-    height: 300px;
-    border-radius: 5px;
-    background-color: lightblue;
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    font-size: bold;
-    border: solid black  2px; 
-    z-index: 100;
+#textMiko {
+
+  background-color: black;
+  font-size: 20px;
+  text-align: justify;
+  color: white;
+  margin: 30px;
 
 }
-#bloczekStartu
-{
-     z-index: 111;
-    background-color: darkmagenta;
-    width : 500px;
-    border-radius: 5px;
-    box-shadow: black 5px;
-    border: 5px solid floralwhite;
-    height: 170px;
-    text-align: center;
-    font-weight: bold;
-    align-items: center;
-    align-content: center;
-    vertical-align: middle;
-
-}
-#instrukcja {
-    width: 400px;
-    height: 300px;
-    border-radius: 5px;
-    background-color: lightblue;
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    font-size: bold;
-    border: solid black  2px; 
-    z-index: 100;
-}
-#instrukcjaText {
-    display: none;
-}
-#text {
-    display: true;
-}
-#bloczekInstrukcja {
-    z-index: 98;
-    background-color: darkmagenta;
-    width : 500px;
-    border-radius: 5px;
-    box-shadow: black 5px;
-    border: 5px solid black;
-    height: 240px;
-    text-align: center;
-    font-weight: bold;
-    align-items: center;
-    align-content: center;
-    vertical-align: middle;
-}
-#startB {
-    display: none;
-}
-#powrot {
-    width: 400px;
-    height: 300px;
-    border-radius: 5px;
-    background-color: lightblue;
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    font-size: bold;
-    border: solid black  2px; 
-    z-index: 100;
-
-}
-#powrotB {
-    display: none;
-}
-#instrukcjaB {
-    display: none;
-}
-.odpBlock {
-
-    background-color: gainsboro;
-    width: 300px;
-    height: 200px;
-    display: none;
-}
-.odpBlockP
-{
-    background-color: gainsboro;
-    width: 150px;
-    height: 75px;
-    margin: 50px;
-    border: midnightblue solid 5px;
-    border-radius: 5px;
-    text-align: center;
-
-}
-.odpBlock1 {
-    background-color: gainsboro;
-    width: 150px;
-    height: 75px;
-    margin: 50px;
-    border: midnightblue solid 5px;
-    border-radius: 5px;
-    text-align: center;
-    display: none;
+h2 {
+    text-align: left;
 }
 
-#wygrana {
-    display: none;
-    
-}
-#trueWin {
-    z-index: 900;
-    background-color: darkmagenta;
-    width : 500px;
-    border-radius: 5px;
-    box-shadow: black 5px;
-    border: 5px solid floralwhite;
-    height: 170px;
-    text-align: center;
-    font-weight: bold;
-    align-items: center;
-    align-content: center;
-    vertical-align: middle;
-    position: absolute;
-    left: 40%;
-
-}
-#trueFail {
-    z-index: 111;
-    background-color: darkmagenta;
-    width : 500px;
-    border-radius: 5px;
-    box-shadow: black 5px;
-    border: 5px solid floralwhite;
-    height: 170px;
-    text-align: center;
-    font-weight: bold;
-    align-items: center;
-    align-content: center;
-    vertical-align: middle;
-    left: 40%;
-    position: absolute;
-}
-#przegrana {
-    display: none;
-}
-.zagrajPonownie {
-    width: 100px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: lightblue;
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    font-size: bold;
-    border: solid black  2px; 
-    z-index: 100;
-    display: none;
-}
-.zagrajPonownieP {
-    width: 400px;
-    height: 300px;
-    border-radius: 5px;
-    background-color: lightblue;
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    font-size: bold;
-    border: solid black  2px; 
-    z-index: 100;
-    display: none;
-}
-.znika {
-    display: none;
-}
-.odpBlock1P
-{
-    background-color: gainsboro;
-    width: 150px;
-    height: 75px;
-    margin: 50px;
-    border: midnightblue solid 5px;
-    border-radius: 5px;
-    text-align: center;
-
-}
-#ODP6, #ODP5, #ODP4, #ODP1, #ODP8, #ZLE8, #ZLE6, #ZLE4, #ZLE3, #ZLE1{
-
-    font-size: x-small;
-
-}

@@ -184,7 +184,7 @@ function placeDiv1(rand_x, rand_y) {
     blad++;
     if(blad == 5) {
       document.getElementById("przegrana").setAttribute("id", "trueFail"); 
-      document.getElementById("").setAttribute("id", "trueFail"); 
+      $('.zagrajPonownie').show(); 
   };
 
   };
@@ -201,6 +201,7 @@ function startGame() {
     if(time < 0) {
             document.getElementById("timer").style.display = "none";
             document.getElementById("przegrana").setAttribute("id", "trueFail");
+            $('.zagrajPonownie').show(); 
     }
 }   ,1000);
     
