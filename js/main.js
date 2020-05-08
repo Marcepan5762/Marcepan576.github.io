@@ -1,7 +1,25 @@
-function proponowane1() {
 
-document.getElementById("link2").setAttribute("id", "link2Show");
-document.getElementById("link1").setAttribute("id", "link1hide");
-document.getElementById("przewin").setAttribute("id", "link1hide");
+
+var x = 0;
+function apl2() {
+
+    $('#link1').css('display', 'none');
+    $('#link2').show();
 
 };
+
+function apl1() {
+
+    $('#link2').css('display', 'none');
+    $('#link1').show();
+
+};
+
+setInterval(function() {
+
+    var i = Math.floor(Math.random() * 2) + 1;
+
+    window['apl' + i]();
+    
+
+}, 7000);
