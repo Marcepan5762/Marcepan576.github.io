@@ -47,7 +47,7 @@ $('#correct4').click(function()
 });
 $('#correct5').click(function()
 {
-   $('#bloczekWynik').show();
+   $('#quizowo6').show();
     sumadobrych++;
     dobrzeKolor();
 });
