@@ -654,6 +654,11 @@ opacity: 0.8;
 h2 {
     text-align: left;
 }
+h3 {
+
+    float: right;
+
+}
 #textMiko {
     background-color: blue;
     color: white;

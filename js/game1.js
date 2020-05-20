@@ -198,6 +198,8 @@ function startGame() {
     var timer=setInterval(function(){
         document.getElementById("timer").innerHTML = time + " POZOSTAŁY CZAS";
         time=time-1;
+        console.log(traf);
+        console.log(blad);
     if(time < 0) {
             document.getElementById("timer").style.display = "none";
             document.getElementById("przegrana").setAttribute("id", "trueFail");
@@ -214,7 +216,7 @@ var gra=setInterval(function(){
     i = Math.floor(Math.random() * 20) + 1;
     window['placeDiv' + i](rand_x, rand_y);
     gra+1;
-},1000);
+},500);
 
 
 var wynika = traf;
