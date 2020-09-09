@@ -11,9 +11,14 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    height: 98%;
     font-size: 1em;
     line-height: 1.4;
+    margin: 0;
+}
+body {
+    height: 98%;
+    margin: 0;
 }
 
 /*
@@ -546,8 +551,6 @@ color: #ffffff;
 	color:  #d279d2;
 	font-family: Geneva, Arial, Helvetica, sans-serif;	
 }
-#srodokowaCzescKontenera {
-    position:  ;
 }
 #tematM
 {
@@ -603,25 +606,24 @@ color: #ffffff;
 
 #copyright
 {
-	font-size: 10px;
+	font-size: 20px;
 	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
 	text-align: center;
-	width: 100%;
-	height: 30px;
-	background-color:#060D13;
-    clear: both;
-    bottom:50px;
-   
-    
+    height:50px;
+    margin-top:-80px;
 	
-	 
 }
 #newsletter {
     background-image: url("../images/tło_nwesletter.jpg");
     width: 100%;
-    min-height: 300x;
-    margin-top: 50px;
+    height: 100%;
     text-align: center;
+    justify-content: center;
+    display:block;
+    
+   
+    
+
 }
 .proponowane {
 
@@ -632,9 +634,7 @@ margin-top: 20px;
 opacity: 0.8;
 
 }
-.proponowane {
 
-}
 #link2 {
 
   display: none;
@@ -654,4 +654,103 @@ opacity: 0.8;
 #link1hide {
     display: none;
 }
+
+#gora {
+
+ margin-top: 30px;
+ border-radius: 50px;
+ 
+}
+#srodokowaCzescKontenera {
+    padding: 20px;
+    padding-bottom: 50px;
+    
+}
+#kontener {
+    min-height: 100%;
+}
+
+.opcja {
+
+    border-radius: 25px;
+    background-color: #060d13;
+    padding: 10px;
+    color: #ffffff;
+   display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    transition: 1.5s;
+    
+}
+#newsletter > .opcja > a{
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+.opcja > h3 {
+    animation: Slide_Up 1.4s ease;
+}
+.buttonn
+{
+    border-radius: 50px;
+    animation: Slide_Up 2.5s ease;
+    width: 300px;
+}
+
+@keyframes Slide_Up{
+    0%{
+        transform: translateY(250px);
+    }
+
+    100%{
+
+        transform: translateY(0);
+
+    }
+
+}
+
+#obiekt1 {
+
+    background-image: url("../images/temat\(1\).jpg");
+    width: 93%;
+    height: 250px;
+    animation: Slide_Up 1.4s ease;
+    
+}
+#obiekt2 {
+    background-image: url("../images/temat\ \(3\).jpg");
+    width: 40%;
+    animation: Slide_Up 3s ease;
+     
+}
+#obiekt3 {
+    background-image: url("../images/temat\ \(2\).jpg");
+    width: 40%;
+    animation: Slide_Up 3s ease;
+    
+}
+ #obiekt2:hover, #obiekt3:hover {
+
+    transform: scale(1.2);
+    }
+#obiekt1:hover{
+    transform: scale(1.08);
+    
+}
+
+#obiekt1:hover > .hiden { visibility: visible;}
+
+#obiekt2:hover > .hiden { visibility: visible;}
+
+#obiekt3:hover > .hiden { visibility: visible;}
+
+
+.hiden {
+    visibility: hidden;
+}
+
 
