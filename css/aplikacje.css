@@ -547,7 +547,7 @@ color: #ffffff;
 	font-family: Geneva, Arial, Helvetica, sans-serif;	
 }
 #srodokowaCzescKontenera {
-    position:  ;
+    
 }
 #tematM
 {
@@ -603,18 +603,12 @@ color: #ffffff;
 
 #copyright
 {
-	font-size: 10px;
+	font-size: 20px;
 	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
 	text-align: center;
-	width: 100%;
-	height: 30px;
-	background-color:#060D13;
-    clear: both;
-    bottom:50px;
-   
-    
-	
-	 
+    height:50px;
+    margin-top:-80px;
+		 
 }
 #newsletter {
     background-image: url("../images/tło_nwesletter.jpg");
@@ -622,17 +616,27 @@ color: #ffffff;
     height: 300x;
     margin-top: 50px;
     text-align: center;
+    
 }
 .proponowane {
 
 max-width: 75%;
+border-radius: 20px;
 margin-top: 30px;
+transition: 2s;
 }
+.proponowane:hover {
+
+    transform: scale(1.4);
+    }
 .proponowane:hover {
 opacity: 0.8;
 
 }
 .proponowane {
     margin-bottom: 50px;
+}
+#gora {
+    border-radius: 50px;
 }
 

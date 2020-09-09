@@ -603,14 +603,11 @@ color: #ffffff;
 
 #copyright
 {
-	font-size: 10px;
+	font-size: 20px;
 	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
 	text-align: center;
-	width: 100%;
-	height: 30px;
-	background-color:#060D13;
-    clear: both;
-    bottom:50px;
+    height:50px;
+    margin-top:-80px;
    
     
 	
@@ -679,4 +676,10 @@ h3 {
 #gwiazdy {
     background-color: lightblue;
 }
+#gora {
+
+    margin-top: 30px;
+    border-radius: 50px;
+    
+   }
 
