@@ -1,11 +1,14 @@
 let obiekt = document.querySelector('#obiekt');
 let moveBy = 35;
 let obiektOdp = document.querySelector('.obiektOdp');
-var sec = 0, time = 100;
+var sec = 0, time = 150;
+var backgSoud = document.getElementById('bacgroundSound');
 var x_pos = 500, y_pos = 250;
 var rand_x, rand_y;
+var db, nd;
 var traf = 0, blad = 0;
 var reakcja = document.getElementsByClassName("odpBlock");
+var blad = document.getElementById('bladzo');
 
 
 var cord = document.getElementsByClassName('.obiekt');
@@ -168,59 +171,78 @@ function placeDiv1(rand_x, rand_y) {
     d.style.top = rand_y+'px';
     document.getElementById("ZLE10").setAttribute("class", "odpBlockP");
   };
-  function punkt() {
+  function punkt(db) {
 
-    traf++;
-    if(traf == 10) {
-
-      document.getElementById("wygrana").setAttribute("id", "trueWin");
-      document.getElementById("zagrajPonownie").setAttribute("id", "zagrajPonownieP");
+    traf= traf + db;
   };
+  if(traf > 10 || traf == 10) {
 
-  };
-  function timeCrusher() {
-
+    document.getElementById("wygrana").setAttribute("id", "trueWin");
+    document.getElementById("zagrajPonownie").setAttribute("id", "zagrajPonownieP");
+    backgSoud.pause();
+};
+  function timeCrusher(nd) {
+    blad.play();
     time=time-5;
-    blad++;
-    if(blad == 5) {
-      document.getElementById("przegrana").setAttribute("id", "trueFail"); 
-      $('.zagrajPonownie').show(); 
+    blad = blad + nd;
+    blad.play();
+     
   };
 
+  if(blad == 5 || time < 0 || blad > 5) {
+    var wynikowo
+     document.getElementById('trueFail') = wynikowo + traf;
+  
+    document.getElementById("przegrana").setAttribute("id", "trueFail"); 
+    $('.zagrajPonownie').show();
+    backgSoud.pause();
   };
   
 
 
 function startGame() {
-     
+
+  
     document.getElementById("bloczekStartu").style.display = "none";
 
     var timer=setInterval(function(){
+      backgSoud.play();
         document.getElementById("timer").innerHTML = time + " POZOSTAŁY CZAS";
         time=time-1;
         console.log(traf);
         console.log(blad);
+      
     if(time < 0) {
             document.getElementById("timer").style.display = "none";
-            document.getElementById("przegrana").setAttribute("id", "trueFail");
+            document.getElementById("przegrana").setAttribute("id", "trueFail"); 
             $('.zagrajPonownie').show(); 
-    }
+    };
+    if(blad == 5 || time < 0 || blad > 5) {
+      document.getElementById('przegrana').setAttribute("id", "trueFail"); 
+      $('.zagrajPonownie').show();
+    };
+    if(traf > 10 || traf == 10) {
+
+      document.getElementById("wygrana").setAttribute("id", "trueWin");
+      document.getElementById("zagrajPonownie").setAttribute("id", "zagrajPonownieP");
+      backgSoud.pause();
+    };
 }   ,1000);
     
 var gra=setInterval(function(){
     var i;
     
     rand_x = Math.floor(Math.random() * 700) + 1;
-    rand_y = Math.random() * (600 - 300) + 1;
+    rand_y = Math.random() * (1200 - 600) + 1;
     
     i = Math.floor(Math.random() * 20) + 1;
     window['placeDiv' + i](rand_x, rand_y);
     gra+1;
-},500);
+},1500);
 
 
 var wynika = traf;
-document.getElementById("wynika").innerHTML = wynika;
+document.getElementById("traf").innerHTML = wynika;
 
 
 };
@@ -248,7 +270,6 @@ function gameover() {
 location.reload()
 
 };
-
 
 
 

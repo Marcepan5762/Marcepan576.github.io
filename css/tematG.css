@@ -635,7 +635,7 @@ opacity: 0.8;
 #miejsceNaText {
 
  background-color: lavender;
- background-image: url("../images/quiz.png");
+ background-image: url("../images/tło_nwesletter.jpg");
  text-align: center;
  border-radius: 10px;
  padding-bottom: 50px;
@@ -646,6 +646,8 @@ opacity: 0.8;
   font-size: 20px;
   text-align: justify;
   margin: 30px;
+  color: white;
+  
 
 }
 h2 {
@@ -653,7 +655,7 @@ h2 {
 }
 h3 {
 
-    float: right;
+    
 
 }
 #textMiko {
