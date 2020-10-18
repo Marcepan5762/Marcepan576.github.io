@@ -658,11 +658,7 @@ h3 {
     
 
 }
-#textMiko {
-    background-color: blue;
-    color: white;
-    
-}
+
 #cd {
     background-color: black;
     color: white;
@@ -684,4 +680,96 @@ h3 {
     border-radius: 50px;
     
    }
+.interacitveBlock{
+    color: #ff9900;	
+    height: 20%;
+    width: 90%;
+    background-color:#3399ff;
+    margin: 50px 50px 50px 50px;
+    border-radius: 25px;
+    padding: 30px;
+    display: inline-block;
+}
+.interacitveBlock > h2 {
+    color:white;
+}
+.slides{
+
+    border-radius: 25px;
+    animation: shrinking 10s;
+    width: 100px;
+    height: 100px;
+
+
+
+}
+.slide1 > img {
+    float: right;
+    animation: shrinking 10s;
+    
+    
+}
+.interacitveBlock > p{
+    animation:type 10s;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: monospace;
+    font-size: 5mm;
+
+}
+.interacitveBlock > .slide {
+    display: none;
+}
+.interacitveBlock > .slide.active {
+    display: flex;
+}
+@keyframes type {
+    0% { width:0ch; overflow: hidden; }
+    50% { overflow: hidden;}
+    100% { width:113ch; }
+  }
+  @keyframes shrinking {
+    from{transform: scale(2)}
+    to {transform: scale(1)}
+  }
+  
+.swipeR {
+    float: right;
+    margin-right: ;
+}
+hr {
+    visibility: hidden;
+}
+#slide1{ 
+    display: none;
+    z-index: 20;
+}
+
+p{
+    float: left;
+    animation:type 10s;
+    white-space: nowrap;
+    font-family: monospace;
+    font-size: 5mm;
+}
+#slideR {
+    float: right;
+    background-image: url("../images/slideR.png");
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    
+}
+#slideL {
+    float: left;
+    background-image: url("../images/slideL.png");
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+#slide1 > img {
+
+     margin-left:25px;
+
+} ;
 
