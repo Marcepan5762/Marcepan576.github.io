@@ -1,8 +1,4 @@
-/**
- * @author Szymon Działowski
- * @date 29 Nov 2017
- * @license MIT
- * @homepage https://github.com/stopsopa/npx-server
+
  */
 var http        = require('http');
 

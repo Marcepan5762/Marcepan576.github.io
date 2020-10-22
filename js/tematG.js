@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var children = Array.prototype.slice.call(parent.querySelectorAll('div.slide'));
 
-    //var children = parent.querySelectorAll('div.slide');
+   
 
     log('children', children);
 
-    parent.addEventListener('click', function (e) { // event delegation http://stopsopa.github.io/pages/js/index.html#event-delegation
+    parent.addEventListener('click', function (e) { 
 
         var el = e.target;
 

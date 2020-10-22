@@ -682,27 +682,37 @@ h3 {
    }
 .interacitveBlock{
     color: #ff9900;	
-    height: 20%;
+    height: 25%;
     width: 90%;
     background-color:#3399ff;
     margin: 50px 50px 50px 50px;
     border-radius: 25px;
-    padding: 30px;
-    display: inline-block;
+    padding: 50px;
+    display: block;
 }
 .interacitveBlock > h2 {
     color:white;
 }
 .slides{
 
+
     border-radius: 25px;
+    
+
+}
+.slides.kopernik {
     animation: shrinking 10s;
     width: 100px;
     height: 100px;
-
-
+    margin-right: 20px;
 
 }
+.slides.opacity {
+    float: right;
+    animation: opacity 10s;
+    height: 230px;
+}
+    
 .slide1 > img {
     float: right;
     animation: shrinking 10s;
@@ -710,9 +720,8 @@ h3 {
     
 }
 .interacitveBlock > p{
-    animation:type 10s;
-    overflow: hidden;
-    white-space: nowrap;
+   
+  
     font-family: monospace;
     font-size: 5mm;
 
@@ -721,17 +730,24 @@ h3 {
     display: none;
 }
 .interacitveBlock > .slide.active {
-    display: flex;
+    display: inline-flex;
 }
 @keyframes type {
-    0% { width:0ch; overflow: hidden; }
-    50% { overflow: hidden;}
-    100% { width:113ch; }
+    0% { width: 0% ;overflow: hidden; white-space: nowrap; }
+    70% { overflow: hidden;  }
+    100% { width: 100%; }
   }
   @keyframes shrinking {
-    from{transform: scale(2)}
+    from{transform: scale(1.5)}
     to {transform: scale(1)}
   }
+@keyframes opacity {
+0% {opacity: 0;}
+70%{opacity: 0.5;}
+100%{opacity: 1;}
+
+}  
+ 
   
 .swipeR {
     float: right;
@@ -739,6 +755,7 @@ h3 {
 }
 hr {
     visibility: hidden;
+    animation: viible 10s;
 }
 #slide1{ 
     display: none;
@@ -748,7 +765,6 @@ hr {
 p{
     float: left;
     animation:type 10s;
-    white-space: nowrap;
     font-family: monospace;
     font-size: 5mm;
 }
@@ -772,4 +788,9 @@ p{
      margin-left:25px;
 
 } ;
+.interacitveBlock {
+
+font-size: medium;
+
+};
 
