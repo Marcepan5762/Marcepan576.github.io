@@ -584,54 +584,7 @@ color: #ffffff;
 	
         
 }
-#tematM:hover
-{
-	opacity: 0.8;
-}
-#tematT:hover
-{
-	opacity: 0.8;
-}
-#dolnaCzescStrony 
-{
-    background-color: #060d13;
-    margin-top: 5%;
-    clear: both;
-    position: relative;
-    
-}
 
-#copyright
-{
-	font-size: 20px;
-	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
-	text-align: center;
-    height:50px;
-    margin-top:-80px;
-   
-    
-	
-	 
-}
-#newsletter {
-    background-image: url("../images/tło_nwesletter.jpg");
-    width: 100%;
-    height: 300x;
-    margin-top: 50px;
-    text-align: center;
-}
-.proponowane {
-
-max-width: 75%;
-margin-top: 30px;
-}
-.proponowane:hover {
-opacity: 0.8;
-
-}
-.proponowane {
-    margin-bottom: 50px;
-}
 #miejsceNaText {
 
  background-color: lavender;
@@ -693,10 +646,19 @@ h3 {
 .interacitveBlock > h2 {
     color:white;
 }
+.slides.univerek {
+    width: 150px;
+    height: 200px;
+    animation: shrinking2 10s;
+    float: left;
+}
+
 .slides{
 
 
     border-radius: 25px;
+    min-width: 150px;
+    min-height: 100px;
     
 
 }
@@ -709,9 +671,17 @@ h3 {
 }
 .slides.opacity {
     float: right;
-    animation: opacity 10s;
+    animation: opacity 20s;
     height: 230px;
 }
+.slides.univerek {
+    width: 150px;
+    height: 200px;
+    animation: shrinking2 10s;
+    float: left;
+}
+
+
     
 .slide1 > img {
     float: right;
@@ -730,14 +700,16 @@ h3 {
     display: none;
 }
 .interacitveBlock > .slide.active {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
 }
 @keyframes type {
     0% { width: 0% ;overflow: hidden; white-space: nowrap; }
-    70% { overflow: hidden;  }
+    40% { overflow: hidden;  }
     100% { width: 100%; }
   }
-  @keyframes shrinking {
+  @keyframes shrinkin {
     from{transform: scale(1.5)}
     to {transform: scale(1)}
   }
@@ -745,8 +717,11 @@ h3 {
 0% {opacity: 0;}
 70%{opacity: 0.5;}
 100%{opacity: 1;}
-
 }  
+@keyframes shrinking2{
+    from{transform: scale(0.5)}
+    to {transform: scale(0.1)}
+  }
  
   
 .swipeR {
@@ -764,7 +739,7 @@ hr {
 
 p{
     float: left;
-    animation:type 10s;
+    animation:type 20s;
     font-family: monospace;
     font-size: 5mm;
 }
@@ -793,4 +768,3 @@ p{
 font-size: medium;
 
 };
-

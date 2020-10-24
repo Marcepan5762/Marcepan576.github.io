@@ -1,0 +1,23 @@
+#univerek {
+    width: 150px;
+    height: 200px;
+    animation: shrinking 10s;
+    float: left;
+    border-radius: 25px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.slide {
+    text-align: center;
+}
+hr {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .fixTheFlex {
+      display: block ;
+  }
+  h3 {
+      margin-right:25px;
+      margin-bottom: 10px;
+  }
