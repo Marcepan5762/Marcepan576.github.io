@@ -295,6 +295,7 @@ textarea {
 }
 #gora {
     display: flex;
+    z-index: 10000000000000000000000;
 }
 #gora > * {
     
@@ -434,6 +435,7 @@ body
 {
  width: 90%;
  margin: 0 auto;
+ overflow: hidden;
  
 	
 }
@@ -442,8 +444,7 @@ body
 #gora
 {
 	background-color: #060d13;
-	position: relative;
-	margin-top: 10px;
+	position: fixed;
 	width: 100%;
 	height: 70px;
    margin-bottom: 30px;
@@ -637,11 +638,12 @@ h3 {
     color: #ff9900;	
     height: 25%;
     width: 90%;
-    background-color:#3399ff;
+    background-image: linear-gradient(to right top, #051937, #232942, #3a3b4c, #4f4e57, #636363);
     margin: 50px 50px 50px 50px;
     border-radius: 25px;
     padding: 50px;
     display: block;
+
 }
 .interacitveBlock > h2 {
     color:white;
@@ -665,13 +667,13 @@ h3 {
 .slides.kopernik {
     animation: shrinking 10s;
     width: 100px;
-    height: 100px;
+    height: 110px;
     margin-right: 20px;
 
 }
 .slides.opacity {
     float: right;
-    animation: opacity 20s;
+    animation: opacity 10s;
     height: 230px;
 }
 .slides.univerek {
@@ -768,3 +770,10 @@ p{
 font-size: medium;
 
 };
+.interacitveBlock > h3 {
+
+    margin-left: 20px;
+    max-height: 50px;
+
+}
+

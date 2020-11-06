@@ -4,8 +4,8 @@
     animation: shrinking 10s;
     float: left;
     border-radius: 25px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 30px;
+    margin-left: 20px;
 }
 .slide {
     text-align: center;
@@ -17,7 +17,233 @@ hr {
   .fixTheFlex {
       display: block ;
   }
-  h3 {
-      margin-right:25px;
-      margin-bottom: 10px;
+  #onImg {
+    background-image: url("../images/tło_nwesletter.jpg");
+    padding: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    animation:antman 10s;
   }
+  #onImg1 {
+    background-image: url("../images/uczelniaPrawa.jpg");
+    padding: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: increase 10s;
+    color: #000000;
+    color: #ffffff;
+  }  
+  #onImg2{
+      background-image: url("../images/rzymipadwa.png");
+    padding: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-weight: 900;
+    animation: swipeFromLeft 5s;
+
+  }
+  @keyframes increase {
+
+     0%{transform: scale(0);}
+     100%{transform: scale(1);}
+
+  }
+  @keyframes swipeFromLeft{
+
+    0%{transform: translateX(2000px);  }
+    100%{  transform: translateX(0px); }
+  }
+
+
+  @keyframes antman {
+
+    0%{transform: scale(2);}
+    100%{transform: scale(1);}
+
+ }
+ @-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
+ .interacitveBlock > h3 {
+
+  margin-right: 20px;
+
+}
+.interacitveBlock > p {
+
+  text-align: center;
+
+}
+.niewidoczne {
+  background-image: linear-gradient(to right top, #051937, #232942, #3a3b4c, #4f4e57, #636363);
+  border-radius: 10px;
+}
+#onImg3 {
+
+-webkit-animation: rotation 10s;
+background-image: url("../images/forbork.jpg");
+border-radius: 25px;
+padding: 20px;
+margin: 10px;
+
+}
+#solarSystem {
+
+  background-image: url("../images/newsletter.jpg");
+  border: #4f4e57 solid 10px ;
+  
+  border-radius: 25px;
+  display: inline- block;
+  text-align: center;
+  padding: 10px;
+  top: 0;
+  left: 0;
+
+}
+.solarSystemPlanet {
+
+ -webkit-animation: rotation 200s linear infinite;
+
+}
+#sun {
+
+  min-width: 400px;
+  top: 0;
+  left: 0;
+
+}
+#mercury {
+
+  max-width: 30px;
+ 
+}
+#venus {
+  max-width: 70px;
+  
+}
+#earth {
+  max-width: 100px;
+  
+}
+#mars {
+  max-width: 50px;
+ 
+}
+#saturn {
+
+   min-width: 200px;
+
+}
+h1 {
+  margin-top: 50px;
+}
+
+.outputHoverBlock {
+
+  background-image: linear-gradient(to right top, #051937, #232942, #3a3b4c, #4f4e57, #636363);
+  width: 200px;
+  height: 70px;
+  border-radius:25px;
+  display: none;
+  color: #ffffff;
+  font-family: monospace ;
+  margin: 25px;
+  position: absolute;
+  left:-9999px;
+  top:-9999px;
+ padding: 20px;
+ font-size: small;
+ padding: 5px;
+ text-align: center;
+
+}
+.megaDiv {
+  width: 100%;
+  height: 20%;
+  background-image: linear-gradient(to right top, #051937, #232942, #3a3b4c, #4f4e57, #636363);
+  border-bottom-right-radius:  25px;
+  border-bottom-left-radius:  25px;
+  animation: swipeFromLeft 5s;
+ 
+}
+.fullInformation {
+
+  display: none; 
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-top: 50px;
+  
+}
+#megaSun {
+
+  background-image: linear-gradient(to right top, #963030, #a2342c, #ad3a27, #b74021, #c04817, #c45610, #c76308, #c97000, #c78400, #c19800, #b7ab00, #aabe00);
+
+}
+.firstImg {
+  max-width: 200px;
+  max-width: auto;
+  border-bottom-left-radius: 25px;
+}
+
+.secoundImg {
+
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 5px;
+
+}
+.displayFSI{
+  display: grid;
+  margin-left: 25px;
+}
+#megaMercury {
+
+  background-image: linear-gradient(to right top, #8496b0, #6b6c80, #4d4651, #2b2529, #000000);
+
+}
+#megaVenus {
+
+  background-image: linear-gradient(to right top, #8894ff, #90a2fc, #9bb0f7, #a9bcf1, #b9c8ea, #b6d2ee, #b6dbf1, #bae3f1, #a7edeb, #acf4d2, #cdf5b0, #ffee94);
+
+}
+#megaEarth {
+  background-image: radial-gradient(circle, #0cff00, #00f3a4, #00def9, #00c1ff, #009dff, #3a95ff, #5c8bff, #7980ff, #a29eff, #c4bdff, #e2deff, #ffffff);
+}
+#megaMars {
+
+  background-image: linear-gradient(to top, #874106, #613e03, #42350b, #2b2a14, #1b1c18);
+
+}
+#megaJupiter {
+
+  background-image: linear-gradient(to bottom, #e2dbff, #f7cff2, #ffc4d8, #ffbeb6, #ffc095, #ffc095, #ffc095, #ffc095, #ffbeb6, #ffc4d8, #f7cff2, #e2dbff);
+
+}
+#megaSaturn {
+
+  background-image: linear-gradient(to bottom, #dcf0ee, #c5e5dc, #b4d9c6, #a8cdad, #a2bf91, #a2bf91, #a2bf91, #a2bf91, #a8cdad, #b4d9c6, #c5e5dc, #dcf0ee);
+
+} 
+#megaSaturn > .firstImg {
+
+  width: 300px;
+
+}
+#megaJupiter > .firstImg {
+
+  width: 300px;
+
+}
+
+
+

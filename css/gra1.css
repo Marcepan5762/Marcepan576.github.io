@@ -295,6 +295,8 @@ textarea {
 }
 #gora {
     display: flex;
+    position: fixed;
+    z-index: 1000;
 }
 #gora > * {
     
@@ -623,7 +625,7 @@ opacity: 0.8;
 }
 #graLapanie {
 
-    background-image: url("../images/gra1.png");
+    background-image: url("../images/tło_nwesletter.jpg");
     width: 100%;
     height: 780px;
 }
