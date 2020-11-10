@@ -16,6 +16,7 @@ const mSaturn = document.querySelector('#megaSaturn');
 
 const divToLoad = document.querySelector('.outputHoverBlock');
 
+ 
 let textToLoad = 'super';
 
 //functions
@@ -211,8 +212,6 @@ saturn.addEventListener("click", e => {
 
 
 });
-
-
 
 
 

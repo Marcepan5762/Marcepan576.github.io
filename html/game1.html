@@ -43,7 +43,10 @@
                     </li>
                     <li><a href="kontakt.html"><i class="icon-info-circled-alt"></i>    Kontakt</a></li>
                     <audio src="../sounds/bS.wav" id="bacgroundSound"></audio>
-                    <audio src="../sounds/blad.wav" id="bladzo"></audio>
+                    <audio src="../sounds/bS.mp3" id="bladzo"></audio>
+                    <audio src="../sounds/bD.mp3" id="good"></audio>
+                    <audio src="../sounds/gameOver.mp3" id="veryBad"></audio>
+                    <audio src="../sounds/levelComplete.mp3" id="veryGood"></audio>
                 </ul>
             </nav>		
           </header>
@@ -59,22 +62,19 @@
                     <button type="menu" id="instrukcja" onclick="instrukcja()">INSTRUKCJA</button>
                 </div>
                 <div id="obiekt"></div>
-                <button class="odpBlock" type="button"  id ="ODP1">Gwiazdy wytwarzają najwięcej fotonów w kosmosie</button>   <button class="odpBlock1" onclick="timeCrusher(1)" id ="ZLE1">Gwiazdy to wilkie kule magmy i metalu</button>
-                <button class="odpBlock"  type="button" id ="ODP2">Gwiazda to ciało niebieskie</button>   <button class="odpBlock1" onclick="timeCrusher(1)" id ="ZLE2">Gwazda to kometa</button>
-                <button class="odpBlock"  type="button" id ="ODP3">Jowisz zkłada się z ok 70% z wodoru</button>   <button class="odpBlock1" onclick="timeCrusher1()" id ="ZLE3">Jowisz składa sie z 70% z gazu zimnego</button>
-                <button class="odpBlock"  type="button" id ="ODP4">Jedną z najbardzej rospoznawalnych cech Jowisza jest Czerwona Plama</button>   <button class="odpBlock1" onclick="timeCrusher(1)" id ="ZLE4">Jedną z najbardzej rospoznawalnych cech Jowisza jest brak księżycy</button>
-                <button class="odpBlock"  type="button" id ="ODP5">Masa Jowisza jest 2,5 razy większa od wszyskich planet układu słonecznego</button>   <nutton class="odpBlock1" onclick="timeCrusher(1)" id ="ZLE5">Jowisz jest 2 razy cięższy od ziemi</button>
-                <button class="odpBlock"  type="button" id ="ODP6">Czarna dziura powstaje gdy zbierze się wystarczająco dużo materii w wystarczająco małym miejscu</button>   <button class="odpBlock1" onclick="timeCrusher(1)" id ="ZLE6">Czarna dziura torzy się gdy wynuchnie supernowa</button>
-                <button class="odpBlock"  type="button" id ="ODP7">Czarne dziury pochłaniają wszystko</button>   <button class="odpBlock1" onclick="timeCrusher()" id ="ZLE7">Czarne dziury jedynie nie pochłaniaja światła</button>
-                <button class="odpBlock"  type="button" id ="ODP8">Czarne dziury teorytycznie da się stworzyć na ziemi</button>   <button class="odpBlock1" onclick="timeCrusher(1)" id ="ZLE8">Czarnych dziur nie da się stworzyć na ziemi</button>
-                <button class="odpBlock"  type="button" id ="ODP9">Najcieższa gwaizda to R136a1</button>   <button class="odpBlock1" onclick="timeCrusher(1)" id ="ZLE9">Nailrzejszą gwiazdą jest R136a1</button>
-                <button class="odpBlock"  type="button" id ="ODP10">Ptolemeusz stworzył teorię Geocętryczną</button>  <button class="odpBlock1" onclick="timeCrusher(1)" id ="ZLE10">Mikołaj Kopernik stworzył teorię Geocętryczną</button>
-                <button id="wygrana">Wygrana <hr/> Idealnie znasz Mikołaja Kopernika<hr/>
-                 <button type="menu" onclick="gameover()" class="zagrajPonownie">ZAGRAJ PONOWNIE</button>
+                <button class="odpBlock" onclick="getApoint()" type="button"  id ="ODP1">Słońce to żółty karzeł</button>   <button class="odpBlock1" onclick="timeCrusher()" id ="ZLE1">Słońce jest zbudowane z 92% z helu i 8% z wodoru</button>
+                <button class="odpBlock" onclick="getApoint()" type="button" id ="ODP2">Największą planetą w ukłądzie słonecznym jest Jowisz</button>   <button class="odpBlock1" onclick="timeCrusher()" id ="ZLE2">W 2017 na w Saturnie wyparowała wielka kometa</button>
+                <button class="odpBlock" onclick="getApoint()" type="button" id ="ODP3">Ziemia jest jest jedyną odkrytą planetą z odpoweidnią atmosferą dla człoweika</button>   <button class="odpBlock1" onclick="timeCrusher()" id ="ZLE3">Sa turn ma aż 67 księżycy</button>
+                <button class="odpBlock" onclick="getApoint()" type="button" id ="ODP4">Jedną z najbardzej rospoznawalnych cech Jowisza jest Czerwona Plama</button>   <button class="odpBlock1" onclick="timeCrusher()" id ="ZLE4">Jedną z najbardzej rospoznawalnych cech Jowisza jest brak księżycy</button>
+                <button class="odpBlock" onclick="getApoint()" type="button" id ="ODP5">Wenus jest najcieplejszą planetą w ukłądzie słonecznym</button>   <nutton class="odpBlock1" onclick="timeCrusher()" id ="ZLE5">Jowisz jest 1.5 razy cięższy od ziemi</button>
+                <button class="odpBlock" onclick="getApoint()" type="button" id ="ODP6">Saturn ma 89 księżycy</button><button class="odpBlock1" onclick="timeCrusher()" id ="ZLE6">Jowisz to prawie najmniejsza planeta w układzie słonecznym</button>
+                <button class="odpBlock" onclick="getApoint()" type="button" id ="ODP7">Na Marsie istniją pory roku</button><button class="odpBlock1" onclick="timeCrusher()" id ="ZLE7">Ziemska atmosfera zkłada się z 78% z tlenu</button>
+                <button class="odpBlock" onclick="getApoint()" type="button" id ="ODP8">Merkury jest najmiejszą planetą układu Słonecznego</button><button class="odpBlock1" onclick="timeCrusher()" id ="ZLE8">Mars to wielka równina</button>
+                <button class="odpBlock" onclick="getApoint()" type="button" id ="ODP9">Temperatura słońca jest większa niż 14000000 stopni C</button><button class="odpBlock1" onclick="timeCrusher()" id ="ZLE9">Saturn ma rok krutszy od Ziemi</button>
+                <button class="odpBlock" onclick="getApoint()" type="button" id ="ODP10">Wenus ma dłurzszy dzień niż rok</button>  <button class="odpBlock1" onclick="timeCrusher()" id ="ZLE10">Wenus jest najbardziej odpowiednią planetą do życia po Ziemi</button>
+                <button id="wygrana">Wygrana <hr/> Udało ci się odpowiedzieć dobrze 10 razy!<hr/>
                  </button>
                 <button id="przegrana"> Przegrana <hr/>
-                    TWÓJ WYNIK TO<div id="wynika"></div><hr/>
-                <button type="menu" onclick="gameover()" class="zagrajPonownie">ZAGRAJ PONOWNIE</button>
                 </button>    
             </div>
         </section>   

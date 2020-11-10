@@ -9,6 +9,12 @@ var db, nd;
 var traf = 0, blad = 0;
 var reakcja = document.getElementsByClassName("odpBlock");
 var blad = document.getElementById('bladzo');
+var punktcik = document.getElementById('good');
+var wygranaY = document.getElementById('veryGood');
+var przegranaY = document.getElementById('veryBad');
+const correctAnswer = document.querySelector(".odpBlock");
+const wrongAnswer = document.querySelector(".odpBlock1");
+var wrong = 0;
 
 
 var cord = document.getElementsByClassName('.obiekt');
@@ -25,10 +31,10 @@ window.addEventListener('load', () =>{
 });
 
 
-var cord = document.getElementById('bloczekStartu');
+/* var cord = document.getElementById('bloczekStartu');
 cord.style.position = "absolute"
 cord.style.left = x_pos+'px';
-cord.style.top = y_pos+'px';
+cord.style.top = y_pos+'px'; */
 
 
 function placeDiv1(rand_x, rand_y) {
@@ -171,28 +177,32 @@ function placeDiv1(rand_x, rand_y) {
     d.style.top = rand_y+'px';
     document.getElementById("ZLE10").setAttribute("class", "odpBlockP");
   };
-  function punkt(db) {
+ 
+ 
 
-    traf= traf + db;
-  };
   if(traf > 10 || traf == 10) {
 
     document.getElementById("wygrana").setAttribute("id", "trueWin");
     document.getElementById("zagrajPonownie").setAttribute("id", "zagrajPonownieP");
     backgSoud.pause();
 };
-  function timeCrusher(nd) {
+  function timeCrusher() {
     blad.play();
-    time=time-5;
-    blad = blad + nd;
+    time -= 30;
     blad.play();
      
   };
 
-  if(blad == 5 || time < 0 || blad > 5) {
+  function getApoint() {
+
+    traf += 1;
+    punktcik.play();
+
+  };
+
+  if(wrong == 3 || time < 0 || wrong> 3) {
     var wynikowo
      document.getElementById('trueFail') = wynikowo + traf;
-  
     document.getElementById("przegrana").setAttribute("id", "trueFail"); 
     $('.zagrajPonownie').show();
     backgSoud.pause();
@@ -202,6 +212,21 @@ function placeDiv1(rand_x, rand_y) {
 
 function startGame() {
 
+
+    
+
+  correctAnswer.addEventListener("mousedown", () => {
+
+    traf += 1;
+    console.log(traf);
+  
+   });
+   wrongAnswer.addEventListener("mousedown", e => {
+  
+    wrong += 1;
+  
+   });
+
   
     document.getElementById("bloczekStartu").style.display = "none";
 
@@ -209,21 +234,23 @@ function startGame() {
       backgSoud.play();
         document.getElementById("timer").innerHTML = time + " POZOSTAŁY CZAS";
         time=time-1;
-        console.log(traf);
-        console.log(blad);
-      
+       
     if(time < 0) {
             document.getElementById("timer").style.display = "none";
             document.getElementById("przegrana").setAttribute("id", "trueFail"); 
+            backgSoud.pause();
+            przegranaY.play();
             $('.zagrajPonownie').show(); 
     };
-    if(blad == 5 || time < 0 || blad > 5) {
+    if(wrong == 5 || time < 0 || wrong > 5) {
       document.getElementById('przegrana').setAttribute("id", "trueFail"); 
       $('.zagrajPonownie').show();
     };
     if(traf > 10 || traf == 10) {
 
-      document.getElementById("wygrana").setAttribute("id", "trueWin");
+      document.querySelector("#wygrana").setAttribute("id", "trueWin");
+      backgSoud.pause();
+            wygranaY.play();
       document.getElementById("zagrajPonownie").setAttribute("id", "zagrajPonownieP");
       backgSoud.pause();
     };
@@ -235,9 +262,12 @@ var gra=setInterval(function(){
     rand_x = Math.floor(Math.random() * 700) + 1;
     rand_y = Math.random() * (1200 - 600) + 1;
     
+    if((window[screenY || screenY] <= rand_y || rand_x) || (840 <= rand_y) || (1450 <= rand_x)) {
+      rand_x == 300;
+      rand_y == 300;
+    }
     i = Math.floor(Math.random() * 20) + 1;
     window['placeDiv' + i](rand_x, rand_y);
-    gra+1;
 },1500);
 
 
@@ -270,6 +300,5 @@ function gameover() {
 location.reload()
 
 };
-
 
 

@@ -181,6 +181,7 @@ h1 {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   margin-top: 50px;
+  text-align: center;
   
 }
 #megaSun {
@@ -244,6 +245,24 @@ h1 {
   width: 300px;
 
 }
+.show3d {
 
+  border-bottom-right-radius: 25px;
+  border: black outset 3.5px ;
+  background-color: #333333;
+  font-family: fantasy;
+  display: flex;
+  
+
+}
+.object3d {
+  display: none;
+  margin-left: 25%;
+  border-radius: 20%;
+}
+.hideMe {
+  display: flex;
+  animation: none;
+}
 
 
